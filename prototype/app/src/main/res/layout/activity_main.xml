@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+    <LinearLayout
+        android:id="@+id/higherText"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:background="@color/teal_700"
+        android:orientation="horizontal"
+        android:padding="10dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="서울시"
+            android:textColor="@color/black"
+            android:textSize="30dp" />
+
+        <LinearLayout
+            android:layout_width="225dp"
+            android:layout_height="wrap_content"></LinearLayout>
+
+        <Button
+            android:id="@+id/alamButton"
+            android:backgroundTint="@color/teal_700"
+            android:layout_width="5dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:drawableRight="@drawable/alam" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/mainWhiteBox"
+        android:layout_width="match_parent"
+        android:layout_height="555dp"
+        android:background="@color/white"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:id="@+id/jeosujiLay"
+            android:layout_width="300dp"
+            android:layout_height="200dp"
+            android:layout_gravity="center"
+            android:layout_margin="20dp"
+            android:layout_marginTop="80dp"
+            android:background="@color/white"
+            android:orientation="horizontal">
+
+            <ImageButton
+                android:id="@+id/jeosu"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@drawable/jeosugi"></ImageButton>
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="35dp"
+            android:paddingLeft="50dp"
+            android:text="배다래 저수지"
+            android:textColor="@color/black"
+            android:textSize="30sp" />
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="27dp"
+                android:paddingLeft="50dp"
+                android:text="포토미션"
+                android:textColor="@color/black"
+                android:textSize="23sp" />
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/star"
+                android:layout_marginTop="5dp">
+            </ImageView>
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/star"
+                android:layout_marginTop="5dp">
+            </ImageView>
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="23dp"
+            android:paddingLeft="50dp"
+            android:text="예상 소요 시간 : 30분"
+            android:textColor="@color/black"
+            android:textSize="17sp" />
+
+        <LinearLayout
+            android:id="@+id/pyungtackLayout"
+            android:layout_width="wrap_content"
+            android:layout_height="220dp"
+            android:layout_gravity="center"
+            android:orientation="vertical"
+            android:paddingTop="30dp">
+
+            <ImageButton
+                android:layout_width="300dp"
+                android:layout_height="match_parent"
+                android:background="@drawable/pyungtack">
+            </ImageButton>
+        </LinearLayout>
+    </LinearLayout>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:paddingLeft="50dp"
+        android:text="평택호"
+        android:layout_marginBottom="12dp"
+        android:textColor="@color/black"
+        android:textSize="30sp" />
+
+    <com.google.android.material.bottomnavigation.BottomNavigationView
+        android:id="@+id/bottomicon"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:itemTextColor="@drawable/selector_menu_blue"
+        app:itemIconTint="@drawable/selector_menu_blue"
+        android:layout_gravity="bottom"
+        app:labelVisibilityMode="labeled"
+        app:menu="@menu/menu_bottomnavi">
+    </com.google.android.material.bottomnavigation.BottomNavigationView>
+</LinearLayout>
+

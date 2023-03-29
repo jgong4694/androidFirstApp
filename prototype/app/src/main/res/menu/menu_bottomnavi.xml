@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item
+        android:id="@+id/homeButton"
+        android:title="Home"
+        android:enabled="true"
+        app:showAsAction="ifRoom"
+        android:icon="@drawable/home_24"
+        />
+    <item
+        android:id="@+id/gisButton"
+        android:title="GIS"
+        android:enabled="true"
+        app:showAsAction="ifRoom"
+        android:icon="@drawable/explore_24"/>
+    <item
+        android:id="@+id/cameraButton"
+        android:title="Camera"
+        android:enabled="true"
+        app:showAsAction="ifRoom"
+        android:icon="@drawable/baseline_camera_alt_24"/>
+    <item
+        android:id="@+id/noticeButton"
+        android:title="Notice"
+        android:enabled="true"
+        app:showAsAction="ifRoom"
+        android:icon="@drawable/notice_24"/>
+    <item
+        android:id="@+id/myPageButton"
+        android:title="MyPage"
+        android:enabled="true"
+        app:showAsAction="ifRoom"
+        android:icon="@drawable/my_24"
+        />
+</menu>

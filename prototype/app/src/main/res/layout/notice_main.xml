@@ -1,0 +1,232 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".NoticeActivity">
+
+    <LinearLayout
+        android:id="@+id/higherText"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:background="@color/teal_700"
+        android:orientation="horizontal"
+        android:padding="10dp">
+
+        <ImageButton
+            android:id="@+id/BackMain"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/left"
+            android:gravity="center"
+            android:textSize="30dp" />
+
+        <LinearLayout
+            android:layout_width="267dp"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:text="용이동"
+                android:textColor="@color/black"
+                android:textSize="28sp"></TextView>
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/alamButton"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:backgroundTint="@color/teal_700"
+            android:drawableRight="@drawable/alam" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:gravity="right"
+        android:orientation="horizontal">
+
+        <Button
+            android:layout_width="100dp"
+            android:layout_height="50dp"
+            android:backgroundTint="@color/teal_700"
+            android:text="글쓰기"></Button>
+    </LinearLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="587dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:orientation="vertical"></LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:orientation="horizontal"
+                android:paddingLeft="30dp">
+
+                <ImageView
+                    android:layout_width="70dp"
+                    android:layout_height="50dp"
+                    android:background="@drawable/man"></ImageView>
+
+                <TextView
+                    android:layout_width="100dp"
+                    android:layout_height="match_parent"
+                    android:gravity="center"
+                    android:text="회원 아이디"
+                    android:textColor="@color/black"
+                    android:textSize="19sp"></TextView>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="200dp"
+                android:layout_marginLeft="30dp"
+                android:layout_marginRight="30dp"
+                android:background="@drawable/jeosugi"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"></ImageView>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="30dp"
+                android:layout_marginLeft="40dp"
+                android:orientation="horizontal">
+
+                <Button
+                    android:id="@+id/Heart"
+                    android:layout_width="50dp"
+                    android:layout_height="35dp"
+                    android:layout_marginRight="10dp"
+                    android:text="0"
+                    android:textSize="12sp"
+                    android:gravity="center"
+                    android:backgroundTint="@color/white"
+                    android:textColor="@color/black"></Button>
+
+                <ImageButton
+                    android:id="@+id/Tolk"
+                    android:layout_width="40dp"
+                    android:layout_height="30dp"
+                    android:background="@drawable/tolk" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="85dp"
+                android:layout_marginLeft="40dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/testText"
+                    android:layout_width="match_parent"
+                    android:layout_height="80dp"
+                    android:text="#베다리#포토미션#미션임파서블\n#따라해요#산책#날이좋아서#
+                                     \n산책하기 좋아요!"
+                    android:textColor="@color/black"
+                    android:textSize="16sp"></TextView>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:orientation="horizontal"
+                    android:paddingLeft="30dp">
+
+                    <ImageView
+                        android:layout_width="70dp"
+                        android:layout_height="50dp"
+                        android:background="@drawable/man"></ImageView>
+
+                    <TextView
+                        android:layout_width="100dp"
+                        android:layout_height="match_parent"
+                        android:gravity="center"
+                        android:text="회원 아이디"
+                        android:textColor="@color/black"
+                        android:textSize="19sp"></TextView>
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="200dp"
+                    android:layout_marginLeft="30dp"
+                    android:layout_marginRight="30dp"
+                    android:background="@drawable/pyungtack"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"></ImageView>
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="30dp"
+                    android:layout_marginLeft="40dp"
+                    android:orientation="horizontal">
+
+                    <Button
+                        android:id="@+id/Heart2"
+                        android:layout_width="35dp"
+                        android:layout_height="30dp"
+                        android:layout_marginRight="10dp"
+                        android:background="@drawable/heart"></Button>
+
+                    <ImageButton
+                        android:id="@+id/Tolk2"
+                        android:layout_width="40dp"
+                        android:layout_height="30dp"
+                        android:background="@drawable/tolk" />
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="85dp"
+                    android:layout_marginLeft="40dp"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="80dp"
+                        android:text="#평택호#포토미션#미션임파서블#
+                                     \n날씨가춥지만!"
+                        android:textColor="@color/black"
+                        android:textSize="16sp"></TextView>
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+
+    <com.google.android.material.bottomnavigation.BottomNavigationView
+        android:id="@+id/bottomicon"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom"
+        app:labelVisibilityMode="labeled"
+        app:menu="@menu/menu_bottomnavi"
+        app:itemTextColor="@drawable/selector_menu_blue"
+        app:itemIconTint="@drawable/selector_menu_blue"
+        ></com.google.android.material.bottomnavigation.BottomNavigationView>
+</LinearLayout>

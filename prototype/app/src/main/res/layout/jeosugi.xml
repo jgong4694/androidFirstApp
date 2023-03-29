@@ -1,0 +1,171 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    tools:context=".JeosujiActivity">
+    <LinearLayout
+        android:id="@+id/higherText"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:background="@color/teal_700"
+        android:orientation="horizontal"
+        android:padding="10dp">
+
+        <ImageButton
+            android:id="@+id/BackMain"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/left"
+            android:gravity="center"
+            android:textSize="30dp" />
+
+        <LinearLayout
+            android:layout_width="267dp"
+            android:layout_height="wrap_content"></LinearLayout>
+
+        <Button
+            android:id="@+id/alamButton"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:backgroundTint="@color/teal_700"
+            android:drawableRight="@drawable/alam" />
+    </LinearLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="637dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="530dp"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:id="@+id/mainWhiteBox"
+                android:layout_width="match_parent"
+                android:layout_height="350dp"
+                android:background="@color/white"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="200dp"
+                    android:layout_gravity="center"
+                    android:layout_margin="20dp"
+                    android:layout_marginTop="80dp"
+                    android:background="@color/white"
+                    android:orientation="horizontal">
+
+                    <ImageButton
+                        android:id="@+id/jeosu"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:background="@drawable/jeosugi"></ImageButton>
+                </LinearLayout>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="38dp"
+                    android:paddingLeft="50dp"
+                    android:text="배다래 저수지"
+                    android:textColor="@color/black"
+                    android:textSize="30dp" />
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="27dp"
+                        android:paddingLeft="50dp"
+                        android:text="포토미션"
+                        android:textColor="@color/black"
+                        android:textSize="23sp" />
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/star"
+                        android:layout_marginTop="5dp">
+                    </ImageView>
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/star"
+                        android:layout_marginTop="5dp">
+                    </ImageView>
+                </LinearLayout>
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingLeft="50dp"
+                    android:text="예상 소요 시간 : 30분"
+                    android:textColor="@color/black"
+                    android:textSize="20sp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="100dp"
+                android:background="@drawable/border"
+                android:orientation="vertical"
+                android:paddingLeft="50dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="지역 문화"
+                    android:textColor="@color/black"
+                    android:textSize="24sp"></TextView>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="평택은 '평평'해서 평택이란 사실을 알고 계신가요?"
+                    android:textColor="@color/black"
+                    android:textSize="15sp"></TextView>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="10dp"></LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="100dp"
+                android:background="@drawable/border"
+                android:orientation="vertical"
+                android:paddingLeft="50dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="포토 미션 보상"
+                    android:textColor="@color/black"
+                    android:textSize="24sp"></TextView>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="평택 미션을 클리어한 여러분에게 \n평택 지역 상품권 1만원권을 증정합니다!"
+                    android:textColor="@color/black"
+                    android:textSize="15sp"></TextView>
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+    <com.google.android.material.bottomnavigation.BottomNavigationView
+        android:id="@+id/bottomicon"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom"
+        app:labelVisibilityMode="labeled"
+        app:menu="@menu/menu_bottomnavi"
+        app:itemTextColor="@drawable/selector_menu_blue"
+        app:itemIconTint="@drawable/selector_menu_blue">
+    </com.google.android.material.bottomnavigation.BottomNavigationView>
+</LinearLayout>
