@@ -54,6 +54,7 @@
         android:orientation="horizontal">
 
         <Button
+            android:id="@+id/addNotice"
             android:layout_width="100dp"
             android:layout_height="50dp"
             android:backgroundTint="@color/teal_700"

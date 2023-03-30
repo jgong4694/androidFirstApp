@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mainLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="">
+
+    <LinearLayout
+        android:id="@+id/higherText"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:background="@color/teal_700"
+        android:orientation="horizontal"
+        android:padding="10dp">
+
+        <ImageButton
+            android:id="@+id/BackMain"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/left"
+            android:gravity="center"
+            android:textSize="30dp" />
+
+        <LinearLayout
+            android:layout_width="267dp"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:text="게시글 쓰기"
+                android:textColor="@color/black"
+                android:textSize="28sp"></TextView>
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/alamButton"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:backgroundTint="@color/teal_700"
+            android:drawableBottom="@drawable/alam" />
+    </LinearLayout>
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="500dp"
+        app:cardElevation="4dp"
+        android:layout_margin="20dp">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="25sp"
+            app:cardCornerRadius="4dp"
+            app:cardElevation="4dp"
+            app:cardUseCompatPadding="true">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <androidx.cardview.widget.CardView
+                    android:layout_width="match_parent"
+                    android:layout_height="35dp">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:text="  제목"
+                        android:textSize="20sp"></TextView>
+                </androidx.cardview.widget.CardView>
+            </LinearLayout>
+        </androidx.cardview.widget.CardView>
+        <LinearLayout
+            android:layout_width="100dp"
+            android:layout_height="50dp"
+            android:orientation="vertical"
+            android:layout_gravity="center">
+            <ImageButton
+                android:id="@+id/upload"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@drawable/upload">
+            </ImageButton>
+        </LinearLayout>
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="220dp"
+            android:layout_margin="40dp"
+            app:cardCornerRadius="4dp"
+            app:cardElevation="4dp">
+        </androidx.cardview.widget.CardView>
+        <Button
+            android:id="@+id/okButton"
+            android:layout_width="125dp"
+            android:layout_height="wrap_content"
+            android:text="확인"
+            android:backgroundTint="@color/teal_700"
+            android:layout_gravity="center">
+        </Button>
+    </LinearLayout>
+    </androidx.cardview.widget.CardView>
+    <com.google.android.material.bottomnavigation.BottomNavigationView
+        android:id="@+id/bottomicon"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom"
+        app:itemIconTint="@drawable/selector_menu_blue"
+        app:itemTextColor="@drawable/selector_menu_blue"
+        app:labelVisibilityMode="labeled"
+        app:menu="@menu/menu_bottomnavi">
+
+    </com.google.android.material.bottomnavigation.BottomNavigationView>
+</LinearLayout>

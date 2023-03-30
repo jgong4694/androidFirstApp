@@ -1,55 +1,29 @@
 package com.example.prototype
 
-import android.animation.ObjectAnimator
-import android.animation.ValueAnimator
 import android.content.Intent
 import android.os.Bundle
 import android.provider.MediaStore
-import android.view.View
-import android.view.animation.Animation
 import android.widget.Button
 import android.widget.ImageButton
-import android.widget.TextView
 import androidx.appcompat.app.AppCompatActivity
 import com.google.android.material.bottomnavigation.BottomNavigationView
 
-class NoticeActivity : AppCompatActivity() {
+class NoticeAddActivity : AppCompatActivity() {
     private lateinit var intent: Intent
-    private lateinit var likeButton:Button
-    private lateinit var movingText:TextView
-    private lateinit var anime:ObjectAnimator
+    private lateinit var likeButton: Button
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.notice_main)
-
-        var textcode = 0
-        movingText = findViewById(R.id.testText)
-        anime = ObjectAnimator.ofFloat(movingText, "translationX", -200f, 300f)
-        anime.setDuration(3000)
-        anime.setRepeatCount(ValueAnimator.INFINITE)
-        anime.setRepeatMode(ValueAnimator.REVERSE)
-        anime.start()
+        setContentView(R.layout.noticeadd)
 
 
-        var likeCount = 0
-        likeButton = findViewById(R.id.Heart)
-        likeButton.setOnClickListener{
-            likeCount++
-            likeButton.setText("$likeCount")
-        }
-        var add = findViewById<Button>(R.id.addNotice)
-        add.setOnClickListener{
-            intent = Intent(this,NoticeAddActivity::class.java)
-            startActivity(intent)
-            overridePendingTransition(R.anim.slide_in_right,R.anim.slide_out_left)
-        }
         var back = findViewById<ImageButton>(R.id.BackMain)
         back.setOnClickListener{
             intent = Intent(this,MainActivity::class.java)
             startActivity(intent)
             overridePendingTransition(R.anim.slide_in_right,R.anim.slide_out_left)
         }
+
         var bottomNavi = findViewById<BottomNavigationView>(R.id.bottomicon)
         bottomNavi.menu.findItem(R.id.noticeButton).setChecked(true)
 

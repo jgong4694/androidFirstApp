@@ -30,6 +30,8 @@
             android:theme="@style/Theme.Prototype.NoActionBar"/>
         <activity android:name=".GisActivity"
             android:theme="@style/Theme.Prototype.NoActionBar"/>
+        <activity android:name=".NoticeAddActivity"
+            android:theme="@style/Theme.Prototype.NoActionBar"/>
     </application>
 
 </manifest>
