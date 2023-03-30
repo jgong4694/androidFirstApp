@@ -33,28 +33,29 @@
             android:layout_height="match_parent"
             android:layout_weight="1"
             android:backgroundTint="@color/teal_700"
-            android:drawableRight="@drawable/alam" />
+            android:drawableBottom="@drawable/alam"
+            />
     </LinearLayout>
 
     <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="637dp"
+        android:layout_height="553dp"
         android:orientation="vertical">
 
         <ImageButton
             android:id="@+id/mySiteButton"
             android:layout_width="match_parent"
-            android:layout_height="437dp"
+            android:layout_height="360dp"
             android:background="@drawable/my_site"></ImageButton>
 
         <LinearLayout
             android:layout_width="match_parent"
-            android:layout_height="match_parent"
+            android:layout_height="165dp"
             android:background="@drawable/border"
             android:orientation="horizontal">
 
             <ImageButton
-                android:layout_width="200dp"
+                android:layout_width="175dp"
                 android:layout_height="match_parent"
                 android:layout_margin="20dp"
                 android:background="@drawable/jeosugi"></ImageButton>
@@ -69,7 +70,7 @@
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="40dp"
-                    android:layout_marginTop="20dp"
+                    android:layout_marginTop="5dp"
                     android:text="배다리 저수지"
                     android:textColor="@color/black"
                     android:textSize="24sp"></TextView>

@@ -25,7 +25,7 @@
             android:textSize="30dp" />
 
         <LinearLayout
-            android:layout_width="267dp"
+            android:layout_width="240dp"
             android:layout_height="wrap_content">
 
             <TextView
@@ -43,7 +43,8 @@
             android:layout_height="match_parent"
             android:layout_weight="1"
             android:backgroundTint="@color/teal_700"
-            android:drawableRight="@drawable/alam" />
+            android:drawableBottom="@drawable/alam"
+            />
     </LinearLayout>
 
     <LinearLayout
@@ -61,7 +62,7 @@
 
     <ScrollView
         android:layout_width="match_parent"
-        android:layout_height="587dp">
+        android:layout_height="503dp">
 
         <LinearLayout
             android:layout_width="match_parent"

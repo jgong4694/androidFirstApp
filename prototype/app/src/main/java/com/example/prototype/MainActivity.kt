@@ -54,6 +54,7 @@ class MainActivity : AppCompatActivity() {
         jeosuji.setOnClickListener{
                 intent = Intent(this, JeosujiActivity::class.java)
                 startActivity(intent)
+               overridePendingTransition(R.anim.slide_out_left,R.anim.slide_in_right)
         }
 
         bottomNavi.setOnItemSelectedListener { menuItem ->
@@ -61,21 +62,26 @@ class MainActivity : AppCompatActivity() {
                 R.id.noticeButton -> {
                     intent = Intent(this, NoticeActivity::class.java)
                     startActivity(intent)
+                    overridePendingTransition(R.anim.slide_in_right,R.anim.slide_out_left)
                     true
+
                 }
                 R.id.myPageButton -> {
                     intent = Intent(this, MyPageActivity::class.java)
                     startActivity(intent)
+                    overridePendingTransition(R.anim.slide_in_right,R.anim.slide_out_left)
                     true
                 }
                 R.id.gisButton -> {
                     intent = Intent(this,GisActivity::class.java)
                     startActivity(intent)
+                    overridePendingTransition(R.anim.slide_in_right,R.anim.slide_out_left)
                     true
                 }
                 R.id.cameraButton -> {
                     intent = Intent(MediaStore.ACTION_IMAGE_CAPTURE_SECURE)
                     startActivity(intent)
+                    overridePendingTransition(R.anim.slide_in_right,R.anim.slide_out_left)
                     false
                 }
                 else -> false

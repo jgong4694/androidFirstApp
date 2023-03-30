@@ -29,11 +29,12 @@
 
         <Button
             android:id="@+id/alamButton"
-            android:backgroundTint="@color/teal_700"
-            android:layout_width="5dp"
+            android:layout_width="wrap_content"
             android:layout_height="match_parent"
             android:layout_weight="1"
-            android:drawableRight="@drawable/alam" />
+            android:backgroundTint="@color/teal_700"
+            android:drawableBottom="@drawable/alam"
+            />
     </LinearLayout>
 
     <LinearLayout
@@ -115,15 +116,6 @@
             </ImageButton>
         </LinearLayout>
     </LinearLayout>
-    <TextView
-        android:layout_width="match_parent"
-        android:layout_height="70dp"
-        android:paddingLeft="50dp"
-        android:text="평택호"
-        android:layout_marginBottom="12dp"
-        android:textColor="@color/black"
-        android:textSize="30sp" />
-
     <com.google.android.material.bottomnavigation.BottomNavigationView
         android:id="@+id/bottomicon"
         android:layout_width="match_parent"

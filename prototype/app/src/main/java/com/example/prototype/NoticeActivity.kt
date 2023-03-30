@@ -23,6 +23,7 @@ class NoticeActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.notice_main)
 
+        var textcode = 0
         movingText = findViewById(R.id.testText)
         anime = ObjectAnimator.ofFloat(movingText, "translationX", -200f, 300f)
         anime.setDuration(3000)
@@ -42,6 +43,7 @@ class NoticeActivity : AppCompatActivity() {
         back.setOnClickListener{
             intent = Intent(this,MainActivity::class.java)
             startActivity(intent)
+            overridePendingTransition(R.anim.slide_in_right,R.anim.slide_out_left)
         }
         var bottomNavi = findViewById<BottomNavigationView>(R.id.bottomicon)
         bottomNavi.menu.findItem(R.id.noticeButton).setChecked(true)
@@ -51,21 +53,25 @@ class NoticeActivity : AppCompatActivity() {
                 R.id.homeButton -> {
                     intent = Intent(this, MainActivity::class.java)
                     startActivity(intent)
+                    overridePendingTransition(R.anim.slide_in_right,R.anim.slide_out_left)
                     true
                 }
                 R.id.myPageButton -> {
                     intent = Intent(this,MyPageActivity::class.java)
                     startActivity(intent)
+                    overridePendingTransition(R.anim.slide_in_right,R.anim.slide_out_left)
                     true
                 }
                 R.id.cameraButton -> {
                     intent = Intent(MediaStore.ACTION_IMAGE_CAPTURE_SECURE)
                     startActivity(intent)
+                    overridePendingTransition(R.anim.slide_in_right,R.anim.slide_out_left)
                     false
                 }
                 R.id.gisButton -> {
                     intent = Intent(this,GisActivity::class.java)
                     startActivity(intent)
+                    overridePendingTransition(R.anim.slide_in_right,R.anim.slide_out_left)
                     true
                 }
                 else -> false

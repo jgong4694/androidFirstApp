@@ -40,13 +40,15 @@
             android:id="@+id/alamButton"
             android:layout_width="wrap_content"
             android:layout_height="match_parent"
+            android:layout_weight="1"
             android:backgroundTint="@color/teal_700"
-            android:drawableRight="@drawable/alam" />
+            android:drawableBottom="@drawable/alam"
+            />
     </LinearLayout>
 
     <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="637dp"
+        android:layout_height="553dp"
         android:orientation="vertical">
 
         <LinearLayout
@@ -117,7 +119,6 @@
             android:layout_height="match_parent"
             android:orientation="vertical"
             android:visibility="visible">
-
             <LinearLayout
                 android:id="@+id/couponCode1"
                 android:layout_width="match_parent"
@@ -168,9 +169,10 @@
             </LinearLayout>
                 <ImageButton
                     android:id="@+id/code1"
-                    android:layout_height="wrap_content"
-                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_width="wrap_content"
                     android:background="@drawable/coard1"
+                    android:layout_marginRight="20dp"
                     android:visibility="gone">
                 </ImageButton>
                 <ImageButton

@@ -27,17 +27,20 @@ class GisActivity : AppCompatActivity() {
         back.setOnClickListener{
             intent = Intent(this,MainActivity::class.java)
             startActivity(intent)
+            overridePendingTransition(R.anim.slide_out_left,R.anim.slide_in_right)
         }
         var click = findViewById<ImageButton>(R.id.mySiteButton)
         click.setOnClickListener {
             intent = Intent(MediaStore.ACTION_IMAGE_CAPTURE_SECURE)
             startActivity(intent)
+            overridePendingTransition(R.anim.slide_in_right,R.anim.slide_out_left)
             false
         }
         var detailClick = findViewById<LinearLayout>(R.id.detailText)
         detailClick.setOnClickListener {
             intent = Intent(this,JeosujiActivity::class.java)
             startActivity(intent)
+            overridePendingTransition(R.anim.slide_in_right,R.anim.slide_out_left)
         }
 
         var bottomNavi = findViewById<BottomNavigationView>(R.id.bottomicon)
@@ -48,21 +51,25 @@ class GisActivity : AppCompatActivity() {
                 R.id.noticeButton -> {
                     intent = Intent(this, NoticeActivity::class.java)
                     startActivity(intent)
+                    overridePendingTransition(R.anim.slide_in_right,R.anim.slide_out_left)
                     true
                 }
                 R.id.homeButton -> {
                     intent = Intent(this, MainActivity::class.java)
                     startActivity(intent)
+                    overridePendingTransition(R.anim.slide_in_right,R.anim.slide_out_left)
                     true
                 }
                 R.id.myPageButton -> {
                     intent = Intent(this,MyPageActivity::class.java)
                     startActivity(intent)
+                    overridePendingTransition(R.anim.slide_in_right,R.anim.slide_out_left)
                     true
                 }
                 R.id.cameraButton -> {
                     intent = Intent(MediaStore.ACTION_IMAGE_CAPTURE_SECURE)
                     startActivity(intent)
+                    overridePendingTransition(R.anim.slide_in_right,R.anim.slide_out_left)
                     false
                 }
                 else -> false

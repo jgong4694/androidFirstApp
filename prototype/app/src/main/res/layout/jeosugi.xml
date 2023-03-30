@@ -33,16 +33,17 @@
             android:layout_height="match_parent"
             android:layout_weight="1"
             android:backgroundTint="@color/teal_700"
-            android:drawableRight="@drawable/alam" />
+            android:drawableBottom="@drawable/alam"
+            />
     </LinearLayout>
 
     <ScrollView
         android:layout_width="match_parent"
-        android:layout_height="637dp">
+        android:layout_height="550dp">
 
         <LinearLayout
             android:layout_width="match_parent"
-            android:layout_height="530dp"
+            android:layout_height="480dp"
             android:orientation="vertical">
 
             <LinearLayout
@@ -111,7 +112,7 @@
 
             <LinearLayout
                 android:layout_width="match_parent"
-                android:layout_height="100dp"
+                android:layout_height="80dp"
                 android:background="@drawable/border"
                 android:orientation="vertical"
                 android:paddingLeft="50dp">

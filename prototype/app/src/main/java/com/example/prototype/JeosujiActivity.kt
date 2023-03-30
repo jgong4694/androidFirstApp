@@ -22,6 +22,7 @@ class JeosujiActivity : AppCompatActivity() {
         back.setOnClickListener(View.OnClickListener {
             intent = Intent(this,MainActivity::class.java)
             startActivity(intent)
+            overridePendingTransition(R.anim.slide_out_left,R.anim.slide_in_right)
         })
         var bottomNavi = findViewById<BottomNavigationView>(R.id.bottomicon)
         bottomNavi.menu.findItem(R.id.gisButton).setChecked(true)
@@ -31,26 +32,31 @@ class JeosujiActivity : AppCompatActivity() {
                 R.id.noticeButton -> {
                     intent = Intent(this, NoticeActivity::class.java)
                     startActivity(intent)
+                    overridePendingTransition(R.anim.slide_in_right,R.anim.slide_out_left)
                     true
                 }
                 R.id.homeButton -> {
                     intent = Intent(this, MainActivity::class.java)
                     startActivity(intent)
+                    overridePendingTransition(R.anim.slide_in_right,R.anim.slide_out_left)
                     true
                 }
                 R.id.myPageButton -> {
                     intent = Intent(this,MyPageActivity::class.java)
                     startActivity(intent)
+                    overridePendingTransition(R.anim.slide_in_right,R.anim.slide_out_left)
                     true
                 }
                 R.id.cameraButton -> {
                     intent = Intent(MediaStore.ACTION_IMAGE_CAPTURE_SECURE)
                     startActivity(intent)
+                    overridePendingTransition(R.anim.slide_in_right,R.anim.slide_out_left)
                     false
                 }
                 R.id.homeButton -> {
                     intent = Intent(this,MyPageActivity::class.java)
                     startActivity(intent)
+                    overridePendingTransition(R.anim.slide_in_right,R.anim.slide_out_left)
                     true
                 }
                 else -> false
