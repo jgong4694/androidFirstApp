@@ -65,7 +65,7 @@ class NoticeAddActivity : AppCompatActivity() {
                 else -> false
             }
         }
-        var upload = findViewById<ImageButton>(R.id.upload)
+        var upload = findViewById<Button>(R.id.upload)
         upload.setOnClickListener {
             intent = Intent(Intent.ACTION_GET_CONTENT)
             intent.type = "image/*"
